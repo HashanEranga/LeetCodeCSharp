@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCodeCSharp.TwoPointers;
+using System;
 
 namespace LeetCodeCSharp.Tests.TwoPointers
 {

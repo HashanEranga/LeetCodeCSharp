@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace LeetCodeCSharp;
+namespace LeetCodeCSharp.TwoPointers;
 
 public class ValidPalindrome
 {

@@ -1,4 +1,4 @@
-﻿namespace LeetCodeCSharp;
+﻿namespace LeetCodeCSharp.Arrays;
 
 public class TopKFrequentElements
 {
