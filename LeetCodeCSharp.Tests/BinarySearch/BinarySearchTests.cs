@@ -1,6 +1,6 @@
 ﻿using LeetCodeCSharp.BinarySearch;
 
-namespace LeetCodeCSharp.Tests.BinarySeachTests;
+namespace LeetCodeCSharp.Tests.BinarySearch;
 
 public class BinarySearchTests
 {
