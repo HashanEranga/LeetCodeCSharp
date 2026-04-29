@@ -2,29 +2,31 @@
 
 public class KokoEatingBanana
 {
-    // TODO: time complexity / space complexity
     public int MinEatingSpeed(int[] piles, int h)
     {
         int end = FindMax(piles);
         int start = 1;
 
-        while (start > end)
+        while (start < end)
         {
             int k = (start + end) / 2;
             int hoursTaken = 0;
             foreach (int pile in piles)
             {
-                if (pile < k)
-                {
-                    hoursTaken += 1;
-                }
-                else
-                {
-                    hoursTaken += (pile/k);
-                }
+                hoursTaken += (int)Math.Ceiling((double) pile / k);
             }
 
+            if (hoursTaken <= h)
+            {
+                end = k;
+            }
+            else
+            {
+                start = k + 1;
+            }
         }
+
+        return start;
     }
 
     public int FindMax(int[] nums)
