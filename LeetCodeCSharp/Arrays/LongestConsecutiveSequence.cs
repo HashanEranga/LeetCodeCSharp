@@ -2,7 +2,6 @@ namespace LeetCodeCSharp.Arrays;
 
 public class LongestConsecutiveSequence
 {
-    // TODO: time complexity / space complexity
     public int LongestConsecutive(int[] nums)
     {
         var hashNums = new HashSet<int>(nums);
