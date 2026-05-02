@@ -35,3 +35,12 @@ Note the test-side folder for binary search is spelled `BinarySeach/` (typo) whi
 Several problems include multiple implementations on one class (e.g. `ContainsDuplicateBruteForce` and `ContainsDuplicateOptimized`) with a one-line comment noting time/space complexity above each. When a problem has an obvious naive approach, follow the same pattern — keep both, label them, and test both. Tests typically include `[Fact]` cases for explicit edge cases (empty, single element, negatives, zeros) plus a `[Theory]` with `[InlineData]` for parameterized cases; when both a brute-force and optimized method exist, there is usually a `BothMethods_SameInput_ReturnSameResult` cross-check test.
 
 `Nullable` and `ImplicitUsings` are enabled in both projects.
+
+## Notion knowledge base
+
+Solved problems are mirrored to a Notion knowledge base under `Knowledge Base → Competitive Programming`:
+
+- **Solved Problems** database — one page per problem with description, approach, complexity, and similar-problems analysis. Notion data source: `89079b16-b6e0-4b79-9220-93a527d52abc`.
+- **Reusable Methods** database — helper utilities (e.g. `FindMax`) extracted from solutions. Data source: `0b5ed5b5-e711-4e4f-9a2a-2763adb3a38d`.
+
+To add new problems to Notion, run `/sync-problems`. The command is **add-only** — it never overwrites existing Notion entries because they contain user-authored notes. It surfaces candidate reusable helper methods in its report but does not create them automatically.
